@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/league.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides" >
+				<section data-markdown >
+                    	<div data-template>
+                                ## 10 things I love about Kotlin
+                        </div>
+				</section>
+				<section>
+					<section data-markdown >
+						<div data-template>
+							## everybody using it ... loves it
+
+							![loves it](most-loved.png)
+						</div>
+					</section>
+
+					<section data-markdown >
+						<div data-template>
+							## almost everybody ... wants to use it
+
+							![wants it](most-wanted.png)
+						</div>
+					</section>
+				</section>
+				<section>
+					<section data-markdown >
+						<div data-template>
+							## what is it
+
+							* JVM based
+							* Java compatible
+							* statically typed
+							* hybrid: fp/oop
+							* (potential) Java Killer (?)
+						</div>
+					</section>
+					<section data-markdown >
+						<div data-template>
+							## what for
+
+							* [backend / desktop](https://kotlinlang.org/docs/reference/server-overview.html)
+							* [Android](https://kotlinlang.org/docs/reference/android-overview.html)
+							* [web](https://kotlinlang.org/docs/reference/js-overview.html)
+							* [native](https://kotlinlang.org/docs/reference/native-overview.html)
+						</div>
+					</section>
+					<section data-markdown >
+						<div data-template>
+							## why
+
+							* less:
+							  * fluff
+							  * baggage / boilerplate
+							  * complex than Scala  😁
+							* more
+							  * modern
+							  * productive
+							  * fun
+						</div>
+					</section>
+
+				</section>
+
+                <section data-markdown >
+					<div data-template>
+						## live hacking the 10 things:
+
+						1. tooling
+						1. string templates
+						1. compact classes
+						1. powerful collection classes   (standard lib)
+						1. functional programming
+						1. nullability / null safety
+						1. multi-value returns / destructuring declarations
+						1. type alias
+						1. nested functions
+						1. extension methods
+					</div>
+				</section>
+				<section>
+					<section data-markdown >
+						<div data-template>
+							## 1. tooling
+
+							* worldclass IDE
+							* [online REPL](https://try.kotlinlang.org/)
+							* REPL
+						</div>
+					</section>
+
+					<section data-markdown >
+						<div data-template>
+							## 2. string templates
+
+							* aka string interpolation
+						</div>
+					</section>
+
+					<section data-markdown >
+						<div data-template>
+							## 3. compact classes
+
+							* data classes
+						</div>
+					</section>
+					<section data-markdown >
+						<div data-template>
+							## 4. powerful collection classes
+
+							* (standard lib)
+							* sets, lists, maps
+						</div>
+					</section>
+					<section data-markdown >
+						<div data-template>
+							## 5. functional programming
+
+						</div>
+					</section>
+					<section data-markdown >
+						<div data-template>
+							## 6. nullability / null safety
+
+						</div>
+					</section>
+					<section data-markdown >
+						<div data-template>
+							## 7. multi-value returns / destructuring declarations
+
+						</div>
+					</section>
+					<section data-markdown >
+						<div data-template>
+							## 8. type alias
+
+							* name a type your way
+
+							e.g. `typealias TokenList = List&lt;NfcToken&gt;`
+						</div>
+					</section>
+					<section data-markdown >
+						<div data-template>
+							## 9. nested functions
+						</div>
+					</section>
+					<section data-markdown >
+						<div data-template>
+							## 10. extension methods
+
+							(_pimp my library_)
+						</div>
+					</section>
+
+				</section>
+
+				<section data-markdown >
+					<div data-template>
+						## resources
+
+						* [Kotlin home](https://kotlinlang.org/)
+						* [steve yegge on Kotlin](https://steve-yegge.blogspot.de/2017/05/why-kotlin-is-better-than-whatever-dumb.html)
+						* [officially supported on Android](https://blog.jetbrains.com/kotlin/2017/05/kotlin-on-android-now-official/)
+						* [awesome kotlin](https://kotlin.link/ https://github.com/KotlinBy/awesome-kotlin)
+						* [kotlin vs scala](https://superkotlin.com/kotlin-vs-scala/?)
+						* [swift is like kotlin](http://nilhcem.com/swift-is-like-kotlin/)
+					</div>
+                </section>
+				<section data-markdown>
+					<div data-template>
+						Questions❔/ Feedback❔
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
